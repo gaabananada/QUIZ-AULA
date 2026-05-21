@@ -25,6 +25,8 @@
 	 	 printf(" ");
 	}
  	printf("QUIZ MENU"); // opcoes basicas do primeiro menu
+ 	printf("\n ===== digite: ===== ");
+ 	printf("\n       jogar \n       opcoes \n       pontuacao \n       sair \n=====================");
  	printf("\n\n    JOGAR \n\n    OPÇOES \n \n    PONTUAÇÃO \n\n    SAIR ");
  	printf("\n\n\n            digite sua opção: ");
  	scanf(" %s", &opcao[0]);
