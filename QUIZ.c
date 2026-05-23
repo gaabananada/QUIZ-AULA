@@ -24,7 +24,7 @@
  	printf("\n    === digite: === ");
  	printf("\n       jogar \n       opcoes \n       pontuacao \n       sair \n   ================");
  	printf("\n\n 1 -   JOGAR \n\n 2 -   OPÇOES \n \n 3 -   PONTUAÇÃO \n\n 4 -   SAIR ");
- 	printf("\n\n\n   Digite sua opção: ");
+ 	printf("\n\n\n  Digite sua opção: ");
  	scanf(" %s", &opcao[0]);
  	while(1){	
  	if (strcmp(opcao[0], "jogar") ==0){ //começo das perguntas do quiz
