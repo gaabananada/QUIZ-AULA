@@ -2,44 +2,41 @@
 #include <stdlib.h>
 #include <windows.h> //usar cls
 #include <locale.h> //deixar em portugues
-
+// aluno: joao gabriel teles gomes soares
 	int main(){
 	//variaveis utilizadas
 	char nome[100], opcao[9][50]; // opcoes serao usadas aq
 	int i, pontuacao = 0;
 	setlocale(LC_ALL, "Portuguese"); //determinar alfabeto
-	
-	//printar nome
 	 	for(i=1; i<=53; i++){ 
 	 	 printf(" ");
 		}
-		 printf("bem vindo ao QUIZ\n ");
+		 printf("bem vindo ao QUIZ\n "); // inicio do programa
 	printf("digite seu nome: ");
 	scanf(" %[^\n]", &nome);
-	
 	pontoinicial: // voltar para o menu vem pra ca
 	//limpar tela
 	system ("cls || clear");
-	
 	for(i=1; i<=55; i++){ //centralizar a mensagem 
 	 	 printf(" ");
 	}
  	printf("QUIZ MENU"); // opcoes basicas do primeiro menu
- 	printf("\n\n    JOGAR \n\n    OPÇOES \n \n    PONTUAÇÃO \n\n    SAIR ");
- 	printf("\n\n\n            digite sua opção: ");
+ 	printf("\n    === digite: === ");
+ 	printf("\n       jogar \n       opcoes \n       pontuacao \n       sair \n   ================");
+ 	printf("\n\n 1 -   JOGAR \n\n 2 -   OPÇOES \n \n 3 -   PONTUAÇÃO \n\n 4 -   SAIR ");
+ 	printf("\n\n\n   Digite sua opção: ");
  	scanf(" %s", &opcao[0]);
- 	while(1){
- 		
+ 	while(1){	
  	if (strcmp(opcao[0], "jogar") ==0){ //começo das perguntas do quiz
 		 pontuacao = 0;
 		 system("cls || clear");
-		 Sleep(1000);
 		 system("cls");
-		 pontoescrita:
+		 pontoescrita: // ponto de retorno para caso erre a escrita
 		for(i=1; i<=53; i++){
 	 	 printf(" ");
 		}
-		printf("     tema: mundo animal ");
+		printf("  TEMA: Mundo Animal ");
+		Sleep(1000);
 		system("cls");
 		printf("\n       pontuação de questões: %d", pontuacao); // 1 questao
 		printf("\n \n Qual é o maior mamífero do planeta? \n" );
@@ -145,14 +142,13 @@
 	 	for(i=1; i<=53; i++){ 
 	 	 printf(" ");
 		}
-		printf("QUIZ CONCLUIDO");
+		printf("=== QUIZ CONCLUIDO ===");
 		printf("\n \n OBRIGADO POR JOGAR");
-		Sleep(1000);
+		Sleep(1500);
 		system("cls");
 		goto pontoinicial;	
 		 break;
 	}
- 	
 	else if (strcmp(opcao[0], "opcoes") ==0){ //menu de opcoes a partir daqui
 		 pontoopcao:
 		 system("cls || clear");
